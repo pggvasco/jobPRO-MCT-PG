@@ -1,0 +1,7 @@
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussChecklist' AND COLUMN_NAME = 'IsCommentEnabled')
+BEGIN
+ALTER TABLE ussChecklist
+ADD IsCommentEnabled  bit null
+End

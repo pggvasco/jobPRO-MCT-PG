@@ -1,0 +1,1 @@
+INSERT INTO [ussSSConfiguration] ([RateMethod], [CostCentreMethod]) VALUES (0,0)

@@ -1,0 +1,12 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSFJobline' AND COLUMN_NAME = 'MarkupPercent')
+BEGIN
+ALTER TABLE ussSFJobline ADD MarkupPercent float
+END
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSSOperation' AND COLUMN_NAME = 'AllowArtisanToAssign')
+BEGIN
+ALTER TABLE ussSSOperation
+ADD AllowArtisanToAssign bit null
+End

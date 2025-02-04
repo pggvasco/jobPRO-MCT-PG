@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DOSCODataSet1" targetNamespace="http://tempuri.org/DOSCODataSet1.xsd" xmlns:mstns="http://tempuri.org/DOSCODataSet1.xsd" xmlns="http://tempuri.org/DOSCODataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=kobus;Initial Catalog=DOSCO;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="DOSCO.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="spProformaInvoiceTrackingRepTableAdapter" GeneratorDataComponentClassName="spProformaInvoiceTrackingRepTableAdapter" Name="spProformaInvoiceTrackingRep" UserDataComponentName="spProformaInvoiceTrackingRepTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DOSCO.dbo" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.ussSFProformaInvoiceTrackingRep</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProformaInvoiceNumber" DataSetColumn="ProformaInvoiceNumber" />
+              <Mapping SourceColumn="CreatedDateTime" DataSetColumn="CreatedDateTime" />
+              <Mapping SourceColumn="JobNumber" DataSetColumn="JobNumber" />
+              <Mapping SourceColumn="cFinalInvoiceNo" DataSetColumn="cFinalInvoiceNo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DOSCODataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DOSCODataSet1" msprop:Generator_UserDSName="DOSCODataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="spProformaInvoiceTrackingRep" msprop:Generator_TableClassName="spProformaInvoiceTrackingRepDataTable" msprop:Generator_TableVarName="tablespProformaInvoiceTrackingRep" msprop:Generator_TablePropName="spProformaInvoiceTrackingRep" msprop:Generator_RowDeletingName="spProformaInvoiceTrackingRepRowDeleting" msprop:Generator_RowChangingName="spProformaInvoiceTrackingRepRowChanging" msprop:Generator_RowEvHandlerName="spProformaInvoiceTrackingRepRowChangeEventHandler" msprop:Generator_RowDeletedName="spProformaInvoiceTrackingRepRowDeleted" msprop:Generator_UserTableName="spProformaInvoiceTrackingRep" msprop:Generator_RowChangedName="spProformaInvoiceTrackingRepRowChanged" msprop:Generator_RowEvArgName="spProformaInvoiceTrackingRepRowChangeEvent" msprop:Generator_RowClassName="spProformaInvoiceTrackingRepRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProformaInvoiceNumber" msprop:Generator_ColumnVarNameInTable="columnProformaInvoiceNumber" msprop:Generator_ColumnPropNameInRow="ProformaInvoiceNumber" msprop:Generator_ColumnPropNameInTable="ProformaInvoiceNumberColumn" msprop:Generator_UserColumnName="ProformaInvoiceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedDateTime" msprop:Generator_ColumnVarNameInTable="columnCreatedDateTime" msprop:Generator_ColumnPropNameInRow="CreatedDateTime" msprop:Generator_ColumnPropNameInTable="CreatedDateTimeColumn" msprop:Generator_UserColumnName="CreatedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="JobNumber" msprop:Generator_ColumnVarNameInTable="columnJobNumber" msprop:Generator_ColumnPropNameInRow="JobNumber" msprop:Generator_ColumnPropNameInTable="JobNumberColumn" msprop:Generator_UserColumnName="JobNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cFinalInvoiceNo" msprop:Generator_ColumnVarNameInTable="columncFinalInvoiceNo" msprop:Generator_ColumnPropNameInRow="cFinalInvoiceNo" msprop:Generator_ColumnPropNameInTable="cFinalInvoiceNoColumn" msprop:Generator_UserColumnName="cFinalInvoiceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedUserName" msprop:Generator_ColumnVarNameInTable="columnCreatedUserName" msprop:Generator_ColumnPropNameInRow="CreatedUserName" msprop:Generator_ColumnPropNameInTable="CreatedUserNameColumn" msprop:Generator_UserColumnName="CreatedUserName" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPrice" msprop:Generator_ColumnVarNameInTable="columnTotalPrice" msprop:Generator_ColumnPropNameInRow="TotalPrice" msprop:Generator_ColumnPropNameInTable="TotalPriceColumn" msprop:Generator_UserColumnName="TotalPrice" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

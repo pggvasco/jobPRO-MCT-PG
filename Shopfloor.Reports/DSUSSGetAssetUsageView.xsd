@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSUSSGetAssetUsageView" targetNamespace="http://tempuri.org/DSUSSGetAssetUsageView.xsd" xmlns:mstns="http://tempuri.org/DSUSSGetAssetUsageView.xsd" xmlns="http://tempuri.org/DSUSSGetAssetUsageView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=i7\i72017;Initial Catalog=MatolaCargoTerminals-Live;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="i7\i72017.MatolaCargoTerminals-Live.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ussGetAssetUsageViewTableAdapter" GeneratorDataComponentClassName="ussGetAssetUsageViewTableAdapter" Name="ussGetAssetUsageView" UserDataComponentName="ussGetAssetUsageViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="i7\i72017.MatolaCargoTerminals-Live.dbo" DbObjectName="[MatolaCargoTerminals-Live].dbo.ussGetAssetUsageView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Usage, Description, AssetClass, ApprovedUsage, JobID FROM dbo.ussGetAssetUsageView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Usage" DataSetColumn="Usage" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="AssetClass" DataSetColumn="AssetClass" />
+              <Mapping SourceColumn="ApprovedUsage" DataSetColumn="ApprovedUsage" />
+              <Mapping SourceColumn="JobID" DataSetColumn="JobID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSUSSGetAssetUsageView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DSUSSGetAssetUsageView" msprop:Generator_UserDSName="DSUSSGetAssetUsageView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ussGetAssetUsageView" msprop:Generator_TableClassName="ussGetAssetUsageViewDataTable" msprop:Generator_TableVarName="tableussGetAssetUsageView" msprop:Generator_TablePropName="ussGetAssetUsageView" msprop:Generator_RowDeletingName="ussGetAssetUsageViewRowDeleting" msprop:Generator_RowChangingName="ussGetAssetUsageViewRowChanging" msprop:Generator_RowEvHandlerName="ussGetAssetUsageViewRowChangeEventHandler" msprop:Generator_RowDeletedName="ussGetAssetUsageViewRowDeleted" msprop:Generator_UserTableName="ussGetAssetUsageView" msprop:Generator_RowChangedName="ussGetAssetUsageViewRowChanged" msprop:Generator_RowEvArgName="ussGetAssetUsageViewRowChangeEvent" msprop:Generator_RowClassName="ussGetAssetUsageViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usage" msprop:Generator_ColumnVarNameInTable="columnUsage" msprop:Generator_ColumnPropNameInRow="Usage" msprop:Generator_ColumnPropNameInTable="UsageColumn" msprop:Generator_UserColumnName="Usage" type="xs:double" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetClass" msprop:Generator_ColumnVarNameInTable="columnAssetClass" msprop:Generator_ColumnPropNameInRow="AssetClass" msprop:Generator_ColumnPropNameInTable="AssetClassColumn" msprop:Generator_UserColumnName="AssetClass" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApprovedUsage" msprop:Generator_ColumnVarNameInTable="columnApprovedUsage" msprop:Generator_ColumnPropNameInRow="ApprovedUsage" msprop:Generator_ColumnPropNameInTable="ApprovedUsageColumn" msprop:Generator_UserColumnName="ApprovedUsage" type="xs:double" minOccurs="0" />
+              <xs:element name="JobID" msprop:Generator_ColumnVarNameInTable="columnJobID" msprop:Generator_ColumnPropNameInRow="JobID" msprop:Generator_ColumnPropNameInTable="JobIDColumn" msprop:Generator_UserColumnName="JobID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

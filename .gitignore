@@ -1,0 +1,11 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio files
+*.suo
+*.user
+.vs/
+*.zip

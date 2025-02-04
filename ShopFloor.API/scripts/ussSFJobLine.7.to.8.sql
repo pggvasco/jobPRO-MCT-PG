@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSFJobline' AND COLUMN_NAME = 'Copy_Requisition_Number')
+BEGIN
+ALTER TABLE ussSFJobline ADD Copy_Requisition_Number nvarchar(50)
+END
+

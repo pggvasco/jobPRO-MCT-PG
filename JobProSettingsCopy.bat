@@ -1,0 +1,1 @@
+XCopy "%userprofile%\Application Data\UniSource Software Services cc\UniSource ShopFloor\1.0.0.0\*.*" "%userprofile%\Application Data\UniSource Software Services cc\UniSource Job Pro\1.0.0.0\xlJob*.*" 

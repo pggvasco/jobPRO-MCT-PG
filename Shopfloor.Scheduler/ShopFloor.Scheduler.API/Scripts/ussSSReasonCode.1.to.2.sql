@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSSReasonCode' AND COLUMN_NAME = 'IsQualityImprovementReport')
+BEGIN
+ALTER TABLE ussSSReasonCode
+ADD IsQualityImprovementReport BIT NULL
+End

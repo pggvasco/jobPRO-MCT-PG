@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a0a02b65-a770-4281-a479-d114181af5f9" useNullables="Native" baseClassName="UniSource.Helper.ActiveRecord.AREquatableBase" generatesDoubleDerived="true" implementINotifyPropertyChanged="true" initializeIListFields="true" manyToManyCollectionIDColumnType="AnsiChar" manyToManyCollectionIDGenerator="None" baseClassPropertyChangedMethod="NotifyPropertyChanged" serializable="true" customTypeAttributes="AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAKcBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZSwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAACVDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZVtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABCNDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZQIAAAAL" xmlns="http://schemas.microsoft.com/dsltools/ActiveWriter">
+  <additionalImports>AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAJ4BU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydCwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAABxDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydFtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABBpDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydAIAAAAL</additionalImports>
+  <classes>
+    <modelClass name="LookupValue" schema="dbo" table="ussSSLookupValues">
+      <targets>
+        <manyToOneRelation Id="17ea7d24-7b21-425a-a1d1-15c4cab10c66" targetCascade="AllDeleteOrphan" targetColumnKey="LookupID" targetTable="ussSSLookupValues" targetPropertyName="LookupValues" sourceCascade="SaveUpdate" sourceColumn="LookupID">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/Lookup" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="7f4fba7d-c2eb-4d77-a4b6-1a0bd1349bd8" name="Code" column="Code" length="0" />
+        <modelProperty Id="6f0a4f05-43f2-48ae-a36f-5f5dbc6c5453" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Lookup" schema="dbo" table="ussSSLookup">
+      <properties>
+        <modelProperty Id="8805d642-9742-403a-ab85-4079ce20ace1" name="Code" column="Code" length="0" />
+        <modelProperty Id="7e85af51-ffdb-4062-926b-8b051a051c66" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ChecklistType" schema="dbo" table="ussChecklistType">
+      <properties>
+        <modelProperty Id="c16141dd-edbd-4a85-9f65-3d6608b3d7d7" name="Code" column="Code" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateIsUnique&quot;&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="e983a36b-9e0b-4f0f-9f76-8ad4964c5444" name="Description" column="Description" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+      </properties>
+    </modelClass>
+    <modelClass name="ChecklistOptionLog" schema="dbo" table="ussChecklistTaskLog">
+      <targets>
+        <manyToOneRelation Id="36a8fe0c-16c5-4787-a768-5665cc865a27" sourceColumn="ChecklistTaskID" targetPropertyGenerated="false">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/ChecklistOption" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="e04f5624-3e5a-4969-b4d4-085c886dccb8" sourceColumn="ChecklistID" targetPropertyGenerated="false">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/Checklist" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="dffb32b8-5b36-47f6-86d4-d786cd1916f8" targetCascade="AllDeleteOrphan" targetColumnKey="ChecklistLogID" sourceColumn="ChecklistLogID">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/ChecklistLog" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="92a7fe5a-499a-45ca-9fc1-c65c869515e5" name="LogDateTime" column="LogDateTime" columnType="Timestamp" length="0" />
+        <modelProperty Id="e47ed2d7-e755-47b1-a2b4-8a7bd8dcb841" name="Document" column="Document" length="0" />
+        <modelProperty Id="b63f512c-54b7-444c-b1fb-044e2772b178" name="Value" column="Value" columnType="StringClob" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ChecklistOption" schema="dbo" table="ussChecklistTask">
+      <targets>
+        <manyToOneRelation Id="ca4e3d5e-e8ef-4e7a-85a8-6a195b7c4039" targetPropertyName="UssChecklistTasks" sourceCascade="SaveUpdate" sourceColumn="LookupID" targetPropertyGenerated="false">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/Lookup" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="1fd7a875-5074-4b82-8f24-8333a2d45ddc" name="Description" column="Description" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="bd272f22-7e1f-4505-b96d-495e16cd5fe4" name="LongDescription" column="LongDescription" length="0" />
+        <modelProperty Id="7d2b40ab-45ae-47bf-852f-a4b6f4c10b2c" name="Document" column="Document" length="0" />
+        <modelProperty Id="2f7dd6d2-2916-4dc0-bf4f-13edd20c36f5" name="IsForceValue" column="IsForceValue" columnType="Boolean" length="0" />
+        <modelProperty Id="3f40780c-816d-4791-8d96-f49fce342ea0" name="DefaultValue" column="DefaultValue" columnType="StringClob" length="0" />
+        <modelProperty Id="e211b440-3a8b-479b-85cd-b7d2d3acf4ae" name="Code" column="Code" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateIsUnique&quot;&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="c210bae1-655c-4ce5-a4d0-488618bfa6f1" name="DataTypeID" column="DataTypeID" columnType="Custom" customColumnType="Int32" customMemberType="DataType" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="d43321bf-a276-4db7-9c38-a76bb046089f" name="DocumentFileName" column="DocumentFileName" length="0" />
+        <modelProperty Id="1b8425a0-a252-448d-b01a-14df0d800e07" name="RequiredValue" column="RequiredValue" columnType="StringClob" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ChecklistLog" schema="dbo" table="ussChecklistLog">
+      <targets>
+        <manyToOneRelation Id="f41b8b2e-c358-4b6f-a6f0-7e842ccdb8c7" targetColumnKey="ChecklistID" targetLazy="true" targetPropertyName="CheckListLogs" sourceColumn="ChecklistID">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/Checklist" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="8236a1dc-57cb-4857-b1a0-3f0da7f619f3" name="AgentID" column="AgentID" columnType="Int32" length="0" />
+        <modelProperty Id="c79ac3eb-3f34-41a1-aa02-b7007a627956" name="AgentName" column="AgentName" length="0" />
+        <modelProperty Id="d44b5a4e-476d-4d07-959e-93673421b458" name="StartDateTime" column="StartDateTime" columnType="Timestamp" length="0" />
+        <modelProperty Id="28143f9a-0261-4a65-b071-e5dca8ab01a6" name="EndDateTime" column="EndDateTime" columnType="Timestamp" length="0" />
+        <modelProperty Id="467940f8-1c98-4b05-a21d-87c3249978e5" name="RecordID" column="RecordID" columnType="Int32" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ChecklistChecklistOption" schema="dbo" table="ussChecklistChecklistTasks">
+      <targets>
+        <manyToOneRelation Id="01b0d089-9a29-47ca-b9a1-3957b116c9fe" targetCascade="AllDeleteOrphan" targetColumnKey="ChecklistTaskID" targetTable="ussChecklistChecklistTasks" targetPropertyName="ChecklistChecklistTasks" sourceCascade="SaveUpdate" sourceColumn="ChecklistTaskID">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/ChecklistOption" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="d17d7430-9649-4d60-89d2-25b129c0f900" targetCascade="AllDeleteOrphan" targetColumnKey="ChecklistID" targetTable="ussChecklistChecklistTasks" targetPropertyName="ChecklistChecklistTasks" sourceCascade="SaveUpdate" sourceColumn="ChecklistID">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/Checklist" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="b093fc47-24d0-4d63-b657-8cefe77207d5" name="Sequence" column="Sequence" columnType="Int32" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Checklist" schema="dbo" table="ussChecklist">
+      <targets>
+        <manyToOneRelation Id="10a91b03-13d4-44c1-b002-251476f0de31" targetPropertyName="ChecklistTypes" sourceCascade="SaveUpdate" sourceColumn="TypeID" targetPropertyGenerated="false">
+          <modelClassMoniker name="/a0a02b65-a770-4281-a479-d114181af5f9/ChecklistType" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="3e42ba67-9d79-4734-943d-f9cdef46c49f" name="Code" column="Code" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateIsUnique&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Field Must Be Unique&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="4059f44c-3061-4141-8c4c-ec2f03f1b9bb" name="Description" column="Description" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;Required field&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+      </properties>
+    </modelClass>
+  </classes>
+</model>

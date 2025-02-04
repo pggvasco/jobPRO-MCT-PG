@@ -1,0 +1,1 @@
+ALTER TABLE ussSFJobStageReport ADD CONSTRAINT DF_IsAutomatic DEFAULT 0 FOR IsAutomatic;

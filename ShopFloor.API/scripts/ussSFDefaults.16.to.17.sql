@@ -1,0 +1,11 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSFDefaults' AND COLUMN_NAME = 'MinDescription1Lenght')
+BEGIN
+ALTER TABLE ussSFDefaults ADD  MinDescription1Lenght Integer
+End
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSFDefaults' AND COLUMN_NAME = 'MinDescription2Lenght')
+BEGIN
+ALTER TABLE ussSFDefaults ADD  MinDescription2Lenght Integer
+End

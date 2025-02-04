@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6C2A8AEC-75F0-4D2B-B8AA-CE453ACE211D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UniSource.Shopfloor.Reports</RootNamespace>
+    <AssemblyName>UniSource.Shopfloor.Reports</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.00 AR oillio|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug Evo 6.00 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.00 AR oillio|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug Evo 6.00 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.50 AR oillio|AnyCPU'">
+    <OutputPath>bin\Debug Evo 6.50 AR oillio\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.50 AR oillio|x86'">
+    <OutputPath>bin\x86\Debug Evo 6.50 AR oillio\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.60 AR oillio|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug Evo 6.60 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.60 AR oillio|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug Evo 6.60 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.80 AR oillio|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug Evo 6.80 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Evo 6.80 AR oillio|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug Evo 6.80 AR oillio\</OutputPath>
+    <DocumentationFile>UniSource.Shopfloor.Reports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\UniSource.Shopfloor.Scheduler.Reports.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.2.Wizard, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    
+    <Reference Include="DevExpress.XtraReports.v12.2.Extensions, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.2.UI, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.vb" />
+    <Compile Include="Dosco Reports\xrDoscoDamageAndFailure.Designer.vb">
+      <DependentUpon>xrDoscoDamageAndFailure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoDamageAndFailure.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoInspection.Designer.vb">
+      <DependentUpon>xrDoscoInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoInspection.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoJobList.Designer.vb">
+      <DependentUpon>xrDoscoJobList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoJobList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPickingSlip.Designer.vb">
+      <DependentUpon>xrDoscoPickingSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPickingSlip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPO.Designer.vb">
+      <DependentUpon>xrDoscoPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPrerequisition.Designer.vb">
+      <DependentUpon>xrDoscoPrerequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoPrerequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoQuotation.Designer.vb">
+      <DependentUpon>xrDoscoQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoQuotation.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoRequisition.Designer.vb">
+      <DependentUpon>xrDoscoRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoRequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoTolerances.Designer.vb">
+      <DependentUpon>xrDoscoTolerances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dosco Reports\xrDoscoTolerances.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrQuotation.Designer.vb">
+      <DependentUpon>xrQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrQuotation.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrBuyOut.Designer.vb">
+      <DependentUpon>xrBuyOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrBuyOut.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrInspection.Designer.vb">
+      <DependentUpon>xrInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrInspection.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrJobList.Designer.vb">
+      <DependentUpon>xrJobList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrJobList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrJobTolerances.Designer.vb">
+      <DependentUpon>xrJobTolerances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrJobTolerances.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrJCPickingSlip.Designer.vb">
+      <DependentUpon>xrJCPickingSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrJCPickingSlip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrPreRequisition.Designer.vb">
+      <DependentUpon>xrPreRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrPreRequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrRequisition.Designer.vb">
+      <DependentUpon>xrRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrRequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SAT\xrSATJobCard.Designer.vb">
+      <DependentUpon>xrSATJobCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAT\xrSATJobCard.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT\xrSATPrerequisition.Designer.vb">
+      <DependentUpon>xrSATPrerequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAT\xrSATPrerequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT\xrSATQuotation.Designer.vb">
+      <DependentUpon>xrSATQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAT\xrSATQuotation.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SAT\xrSATRequisition.Designer.vb">
+      <DependentUpon>xrSATRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAT\xrSATRequisition.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xfJobInspection.Designer.vb">
+      <DependentUpon>xfJobInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xfJobInspection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xfQuotation.Designer.vb">
+      <DependentUpon>xfQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xfQuotation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xrJobActivities.Designer.vb">
+      <DependentUpon>xrJobActivities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrJobActivities.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrJobCard.Designer.vb">
+      <DependentUpon>xrJobCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrJobCard.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generic\xrPurchaseOrder.Designer.vb">
+      <DependentUpon>xrPurchaseOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\xrPurchaseOrder.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrJobQuote.Designer.vb">
+      <DependentUpon>xrJobQuote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrJobQuote.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoDamageAndFailure.resx">
+      <DependentUpon>xrDoscoDamageAndFailure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoInspection.resx">
+      <DependentUpon>xrDoscoInspection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoJobList.resx">
+      <DependentUpon>xrDoscoJobList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoPickingSlip.resx">
+      <DependentUpon>xrDoscoPickingSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoPO.resx">
+      <DependentUpon>xrDoscoPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoPrerequisition.resx">
+      <DependentUpon>xrDoscoPrerequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoQuotation.resx">
+      <DependentUpon>xrDoscoQuotation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoRequisition.resx">
+      <DependentUpon>xrDoscoRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosco Reports\xrDoscoTolerances.resx">
+      <DependentUpon>xrDoscoTolerances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrBuyOut.resx">
+      <DependentUpon>xrBuyOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrInspection.resx">
+      <DependentUpon>xrInspection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrJCPickingSlip.resx">
+      <DependentUpon>xrJCPickingSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrJobCard.resx">
+      <DependentUpon>xrJobCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrQuotation.resx">
+      <DependentUpon>xrQuotation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrJobTolerances.resx">
+      <DependentUpon>xrJobTolerances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrPreRequisition.resx">
+      <DependentUpon>xrPreRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrPurchaseOrder.resx">
+      <DependentUpon>xrPurchaseOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\xrRequisition.resx">
+      <DependentUpon>xrRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xfJobInspection.resx">
+      <DependentUpon>xfJobInspection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xfQuotation.resx">
+      <DependentUpon>xfQuotation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrJobActivities.resx">
+      <DependentUpon>xrJobActivities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrJobQuote.resx">
+      <DependentUpon>xrJobQuote.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Pastel.Evolution.JobCard.datasource" />
+    <None Include="My Project\DataSources\Pastel.Evolution.PurchaseOrder.datasource" />
+    <None Include="My Project\DataSources\Pastel.Evolution.SalesOrderQuotation.datasource" />
+    <None Include="My Project\DataSources\UniSource.Helper.ActiveRecord.Evolution.Client.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.API.Job.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.API.JobTolerance.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.API.PurchaseOrder.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.API.Requisition.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Activity.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.ActivityLog.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Artisan.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Configuration.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.CostCentre.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Customer.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Job.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Machine.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Operation.datasource" />
+    <None Include="My Project\DataSources\UniSource.ShopFloor.Scheduler.API.Part.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 3.2.0.u'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'" />
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Antlr3.Runtime.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.ActiveRecord.Linq">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.ActiveRecord.Linq.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Antlr3.Runtime.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.ActiveRecord.Linq">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.ActiveRecord.Linq.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 2.1.2.0'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.1.6.77.1\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.1.6.77.1\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.6.50.2.8\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 2.1.2.0'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.6.50.2.8\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR oillio'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR oillio'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Castle.DynamicProxy2.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\oillio\3.0.0\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\2.1.2.0\log4net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.00 AR 3.2.0.u'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Lucene.Net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.50 AR 3.2.0.u'">
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.ActiveRecord.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.Components.Validator.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Castle.Core.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Iesi.Collections.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\Lucene.Net.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.ByteCode.Castle.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\..\..\Framework\Assemblies\Castle\3.2.0.u\NHibernate.Search.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.60 AR oillio'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.6.60.3.0\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug Evo 6.80 AR oillio'">
+    <Reference Include="Pastel.Evolution">
+      <HintPath>..\..\..\Framework\Assemblies\Pastel.Evolution.6.80.1.4\Pastel.Evolution.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\TFS\Framework\Helper.ActiveRecord\Helper.ActiveRecord.vbproj">
+      <Project>{550C0836-2A29-4648-A29C-E6282499F686}</Project>
+      <Name>Helper.ActiveRecord</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\TFS\Framework\UniSource\UniSource.vbproj">
+      <Project>{2E5F711F-AE30-4C14-891D-5E01045420FA}</Project>
+      <Name>UniSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopFloor.API\ShopFloor.API.vbproj">
+      <Project>{BC209D21-0EAE-41B5-B6FD-C6C6ACDF7112}</Project>
+      <Name>ShopFloor.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

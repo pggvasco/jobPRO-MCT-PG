@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[ussUserDefinedFieldType](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[TypeFullName] [nvarchar](255) NULL,
+	[TableName] [nvarchar](255) NULL,
+ CONSTRAINT [PK_ussUserDefinedFieldType] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

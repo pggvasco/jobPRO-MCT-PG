@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSFDefaults' AND COLUMN_NAME = 'SellingPriceGPPercentageUDF')
+BEGIN
+ALTER TABLE ussSFDefaults ADD SellingPriceGPPercentageUDF nvarchar(255)
+END
+

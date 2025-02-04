@@ -1,0 +1,7 @@
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussChecklistLog' AND COLUMN_NAME = 'Comment')
+BEGIN
+ALTER TABLE ussChecklistLog
+ADD Comment varchar(100)
+End

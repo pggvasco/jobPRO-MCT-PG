@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="042918b6-b724-4b02-b2f2-002049860c92" useNullables="Native" baseClassName="UniSource.Helper.ActiveRecord.AREquatableBase" generatesDoubleDerived="true" implementINotifyPropertyChanged="true" initializeIListFields="true" manyToManyCollectionIDColumnType="AnsiChar" manyToManyCollectionIDGenerator="None" baseClassPropertyChangedMethod="NotifyPropertyChanged" serializable="false" customTypeAttributes="AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAKcBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZSwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAACVDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZVtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABCNDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZQIAAAAL" xmlns="http://schemas.microsoft.com/dsltools/ActiveWriter">
+  <additionalImports>AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAJ4BU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydCwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAABxDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydFtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABBpDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydAIAAAAL</additionalImports>
+  <classes>
+    <modelClass name="Activity" schema="dbo" table="Activity">
+      <targets>
+        <manyToOneRelation Id="d0c8c5e3-43ee-42d4-83b6-523ea9393cac" targetColumnKey="ArtisanId" targetTable="ussActivity" targetPropertyName="UssActivities" sourceColumn="ArtisanId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="ad50fdf1-93a6-4838-8a42-a9be61dd4703" targetColumnKey="JobId" targetTable="ussActivity" targetPropertyName="UssActivities" sourceColumn="JobId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Job" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="29c186b7-bcee-4114-b045-fadd0b2ecb93" targetColumnKey="MachineId" targetTable="ussActivity" targetPropertyName="UssActivities" sourceColumn="MachineId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="75db51d5-c81e-48e2-b7a6-47749258cd5c" targetColumnKey="OperationId" targetTable="ussActivity" targetPropertyName="UssActivities" sourceColumn="OperationId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Operation_" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="ddd72e29-9b65-4d5f-8a4e-19784f183127" targetColumnKey="PartId" targetTable="ussActivity" targetPropertyName="UssActivities" sourceColumn="PartId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Part" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="38d0ca5b-8d48-47ba-8b91-427041c34b7b" name="EstimatedStartDate" column="EstimatedStartDate" columnType="Timestamp" length="0" />
+        <modelProperty Id="20b60bda-9e5e-461e-8458-9c7da10668a5" name="EstimatedDuration" column="EstimatedDuration" columnType="Double" length="0" />
+        <modelProperty Id="01829d1b-fc7f-4748-a37f-17b9d333342d" name="EstimatedActualDuration" column="EstimatedActualDuration" columnType="Double" length="0" />
+        <modelProperty Id="7f38f2ce-5ce0-435f-9c26-d0c5eb509128" name="ActualStartDate" column="ActualStartDate" columnType="Timestamp" length="0" />
+        <modelProperty Id="3186d2fe-336a-474f-b428-61bd508ddc15" name="ActualDuration" column="ActualDuration" columnType="Double" length="0" />
+        <modelProperty Id="233051cf-2cbd-4795-a858-bfa65d9c1774" name="Value" column="Value" columnType="Double" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Artisan" schema="dbo" table="Artisan">
+      <properties>
+        <modelProperty Id="ae755558-0252-4597-abc8-435d87a378f4" name="Code" column="Code" length="0" />
+        <modelProperty Id="a3b87c24-a397-4880-ae29-38695ea1a2b5" name="Description" column="Description" length="0" />
+        <modelProperty Id="73db9da5-5ff3-4656-b439-c6af203f2562" name="Colour" column="Colour" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Customer" schema="dbo" table="Customer">
+      <properties>
+        <modelProperty Id="0c3aeb50-6d85-43f3-99e8-96b52d2f7532" name="Code" column="Code" length="0" />
+        <modelProperty Id="71ddca9c-443c-447b-8cb0-8d75c1676e6f" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Department" schema="dbo" table="Department">
+      <properties>
+        <modelProperty Id="85259059-f6d4-4f2a-b234-3c6940f9a04e" name="Code" column="Code" length="0" />
+        <modelProperty Id="0c853c7b-1626-4613-9b87-83469318a824" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Job" schema="dbo" table="Job">
+      <targets>
+        <manyToOneRelation Id="5717e3ea-5071-4049-8be9-6abb64c5b482" targetColumnKey="CustomerId" targetTable="ussJob" targetPropertyName="UssJobs" sourceColumn="CustomerId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Customer" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="07e89012-777d-4441-bb8b-1a20ab551148" name="Number" column="Number" columnType="Int32" length="0" />
+        <modelProperty Id="ec4af448-a198-4bef-b467-c7d37765400c" name="Description" column="Description" length="0" />
+        <modelProperty Id="e590910a-9204-49c7-bf92-d42f618cd3d7" name="JobDate" column="JobDate" length="0" />
+        <modelProperty Id="acc081a8-c789-47d0-bbd8-4bf9a6164fda" name="ExpectedDevlieryDate" column="ExpectedDevlieryDate" length="0" />
+        <modelProperty Id="96ce261d-412b-4ba8-82b7-0d7ed49ec699" name="OrderPrice" column="OrderPrice" columnType="Double" length="0" />
+        <modelProperty Id="669ecd77-c297-40ac-afe2-9720c7d9c645" name="StartDate" column="StartDate" columnType="Timestamp" length="0" />
+        <modelProperty Id="f06bfeb8-cd07-4b6e-99a5-714982e6f4e3" name="EndDate" column="EndDate" columnType="Timestamp" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Machine" schema="dbo" table="Machine">
+      <properties>
+        <modelProperty Id="0bb679dc-bb49-41c2-8d98-9f92242665be" name="Code" column="Code" length="0" />
+        <modelProperty Id="b66d238b-fcc1-4205-b833-df35f672887c" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="MachineArtisans" schema="dbo" table="MachineArtisans">
+      <targets>
+        <manyToOneRelation Id="49a9eb4e-f356-4e7c-a025-c147a62bdb32" targetColumnKey="ArtisanId" targetTable="ussMachineArtisans" targetPropertyName="UssMachineArtisans" sourceColumn="ArtisanId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="fc8b9915-28c4-4c3e-b67c-5ac2a1a22411" targetColumnKey="MachineId" targetTable="ussMachineArtisans" targetPropertyName="UssMachineArtisans" sourceColumn="MachineId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Machine" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="Operation_" schema="dbo" table="Operation">
+      <targets>
+        <manyToOneRelation Id="9dea056a-df8a-4718-b0e8-28e3fa6971c8" targetColumnKey="DeparmentId" targetTable="ussOperation" targetPropertyName="UssOperations" sourceColumn="DeparmentId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Department" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="e893f8c6-6737-4191-a62c-abf97032b686" name="Code" column="Code" length="0" />
+        <modelProperty Id="02fb9580-4d60-4275-9088-6e41dce3d8d9" name="Description" column="Description" length="0" />
+        <modelProperty Id="9d9d2e85-d799-4832-bf07-7aa59135e08a" name="Rate" column="Rate" columnType="Double" length="0" />
+        <modelProperty Id="3e155480-794d-4d50-9785-2dc886cbd4fc" name="IsBuyOut" column="IsBuyOut" columnType="Boolean" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="OperationArtisans" schema="dbo" table="OperationArtisans">
+      <targets>
+        <manyToOneRelation Id="ae180cd2-e63f-436b-9cf7-42ee3a326108" targetColumnKey="ArtisanId" targetTable="ussOperationArtisans" targetPropertyName="UssOperationArtisans" sourceColumn="ArtisanId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="65736e71-108e-4a15-bbc7-05d87f2e7e8b" targetColumnKey="OperationId" targetTable="ussOperationArtisans" targetPropertyName="UssOperationArtisans" sourceColumn="OperationId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Operation_" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="OperationMachines" schema="dbo" table="OperationMachines">
+      <targets>
+        <manyToOneRelation Id="da97ba81-9292-4e13-aa90-59062ee7f3a6" targetColumnKey="MachineId" targetTable="ussOperationMachines" targetPropertyName="UssOperationMachines" sourceColumn="MachineId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="e6eddeb4-9fb0-4aa0-be45-cc9f11f1924b" targetColumnKey="OperationId" targetTable="ussOperationMachines" targetPropertyName="UssOperationMachines" sourceColumn="OperationId">
+          <modelClassMoniker name="/042918b6-b724-4b02-b2f2-002049860c92/Operation_" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="Part" schema="dbo" table="Part">
+      <properties>
+        <modelProperty Id="c2921027-951c-4f77-8ab6-a424c1e3d0e8" name="Code" column="Code" length="0" />
+        <modelProperty Id="62cbc52e-8560-43ff-b725-1706c93f90d3" name="Description" column="Description" length="0" />
+      </properties>
+    </modelClass>
+  </classes>
+</model>

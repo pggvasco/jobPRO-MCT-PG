@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Artisan">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAABAAABAAAAA=</HashCode>
+      <FileName>Artisan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Customer">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.CostCentre">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAQAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Drawings">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Lookup" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.LookupValues" Collapsed="true">
+    <Position X="10.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LookupValues.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.MachineChecklist" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.OperationChecklist" Collapsed="true">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Operation">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACEAAAAAAAABAAAAAAAAhAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Machine">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAABAAABAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Part">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAABAAABAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.ReasonCode" Collapsed="true">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniSource.ShopFloor.Scheduler.API.Job">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEEAAAAAAAAAAAAEAgAAAAAABAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>awShopFloor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

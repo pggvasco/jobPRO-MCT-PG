@@ -1,0 +1,1 @@
+ALTER TABLE [dbo].[ussSFWorkCentre] ADD  CONSTRAINT [DF_ussSFWorkCentre_Factor]  DEFAULT ((1)) FOR [Factor]

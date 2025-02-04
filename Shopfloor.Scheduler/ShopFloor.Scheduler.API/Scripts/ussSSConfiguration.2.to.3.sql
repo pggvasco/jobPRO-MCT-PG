@@ -1,0 +1,19 @@
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSSConfiguration' AND COLUMN_NAME = 'LogOffInterval')
+BEGIN
+ALTER TABLE ussSSConfiguration
+ADD LogOffInterval int  null
+End
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSSConfiguration' AND COLUMN_NAME = 'LogOffIntervalType')
+BEGIN
+ALTER TABLE ussSSConfiguration
+ADD LogOffIntervalType int  null
+End
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ussSSConfiguration' AND COLUMN_NAME = 'TimerInterval')
+BEGIN
+ALTER TABLE ussSSConfiguration
+ADD TimerInterval int null
+End
+

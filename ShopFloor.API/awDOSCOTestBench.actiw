@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a94041c3-d3bf-4277-a07d-efcdad3723d2" useNullables="Native" baseClassName="UniSource.Helper.ActiveRecord.AREquatableBase" generatesDoubleDerived="true" initializeIListFields="true" manyToManyCollectionIDColumnType="AnsiChar" manyToManyCollectionIDGenerator="None" serializable="true" customTypeAttributes="AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAKcBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZSwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAACVDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZVtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABCNDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZQIAAAAL" xmlns="http://schemas.microsoft.com/dsltools/ActiveWriter">
+  <additionalImports>AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAJ4BU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydCwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAABxDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydFtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABBpDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydAIAAAAL</additionalImports>
+  <classes>
+    <modelClass name="RESULT_CHART" schema="dbo" table="ussSFTestBenchResultChart" baseClassName="Castle.ActiveRecord.ActiveRecordValidationBase">
+      <properties>
+        <modelProperty Id="81e3a3a0-6357-48cf-a8e7-28cfc4696eb3" name="JOB_NO" length="0" generator="Assigned" keyType="CompositeKey" />
+        <modelProperty Id="8755ce86-3e59-40ab-a087-9e175ef3e910" name="DBPIC" columnType="BinaryBlob" length="0" />
+        <modelProperty Id="2f52ec6e-e3c6-4357-91ff-5756b859ba49" name="SEC_PORT" length="0" />
+        <modelProperty Id="7d0e978a-ab8a-4e8c-ab28-5b3d6625566d" name="REVISION" length="0" generator="Assigned" keyType="CompositeKey" />
+      </properties>
+    </modelClass>
+    <modelClass name="JOBSTESTED" schema="dbo" table="ussSFTestBenchJobsTested" baseClassName="Castle.ActiveRecord.ActiveRecordValidationBase">
+      <properties>
+        <modelProperty Id="2fdddfda-2fff-48e2-ab4e-d47fc9fad8e5" name="JOB_NO" length="0" generator="Assigned" keyType="CompositeKey" />
+        <modelProperty Id="880891b6-131d-497e-88df-45a6a680f256" name="SAMPLE_NO" columnType="Int32" length="0" generator="Assigned" keyType="CompositeKey" />
+        <modelProperty Id="50f9b82a-d98f-49e7-b9c6-b37d659339d9" name="CUSTOMER" length="0" />
+        <modelProperty Id="ed3d90f4-dbe8-4fac-bb6d-b53ade398536" name="TESTED_BY" length="0" />
+        <modelProperty Id="2c0d4ec2-9287-4e47-8971-e34fdabefec3" name="DATE" length="0" />
+        <modelProperty Id="c860d9b8-4a5e-4fef-a862-860158191a9c" name="PRESSURE" columnType="Int32" length="0" />
+        <modelProperty Id="518ff327-9798-430e-a3e7-002422b9a74b" name="PRESSURE_UNITS" length="0" />
+        <modelProperty Id="15a27b03-8be0-49c2-9877-f1e306369d34" name="FLOW" columnType="Int32" length="0" />
+        <modelProperty Id="4481b305-9ed6-4e73-b0da-35f779c2499f" name="FLOW_UNITS" length="0" />
+        <modelProperty Id="143b3786-85f9-4c5d-a3e6-06aacf7b0f52" name="FLOW_OFFSET" columnType="Int32" length="0" />
+        <modelProperty Id="294c21cd-6a99-443f-b25d-20a42be5e19a" name="SPEED" columnType="Int32" length="0" />
+        <modelProperty Id="f314e400-14a0-4a7a-a7ea-8b93ed915d51" name="SPEED_UNITS" length="0" />
+        <modelProperty Id="d40cc5a1-8473-4ae7-83bb-eadb5b01b228" name="TEMP" columnType="Int32" length="0" />
+        <modelProperty Id="38f2d8ad-d661-4453-998a-23d8af659fd3" name="TEMP_UNITS" length="0" />
+        <modelProperty Id="0b78f28d-0ef3-4586-80ee-e3be32008214" name="EFFICIENCY" columnType="Double" length="0" />
+        <modelProperty Id="ea8a6e72-607b-4b47-a6ba-1e78d982523a" name="RESULT" length="0" />
+        <modelProperty Id="941bc53e-05a6-46c3-89b9-f75a1796f363" name="DESCRIPTION" length="0" />
+        <modelProperty Id="21cecd1c-ee46-4083-a227-43f055149b5c" name="COMMENT" length="0" />
+        <modelProperty Id="25f23b95-6e0f-4049-8116-4bc459ac5402" name="SEC_PORT" length="0" />
+        <modelProperty Id="63122bd4-b161-4320-847e-20f736346af5" name="PARTNO" length="0" />
+        <modelProperty Id="7387d2a4-fbd6-4637-aeab-2d8e6afbf8ef" name="ROTATION" length="0" />
+        <modelProperty Id="16700fe9-7a24-40ef-be6d-a4717004e3ed" name="REVISION" length="0" generator="Assigned" keyType="CompositeKey" />
+      </properties>
+    </modelClass>
+  </classes>
+</model>

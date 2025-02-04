@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1f1288b3-d205-413c-9c6d-77fd95495ae5" useNullables="Native" baseClassName="UniSource.Helper.ActiveRecord.AREquatableBase" generatesDoubleDerived="true" implementINotifyPropertyChanged="true" initializeIListFields="true" manyToManyCollectionIDColumnType="AnsiChar" manyToManyCollectionIDGenerator="None" baseClassPropertyChangedMethod="NotifyPropertyChanged" serializable="true" customTypeAttributes="AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAKcBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZSwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAACVDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZVtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABCNDYXN0bGUuQWN0aXZlV3JpdGVyLkN1c3RvbUF0dHJpYnV0ZQIAAAAL" xmlns="http://schemas.microsoft.com/dsltools/ActiveWriter">
+  <additionalImports>AAEAAAD/////AQAAAAAAAAAMAgAAAF1DYXN0bGUuQWN0aXZlV3JpdGVyLkRzbCwgVmVyc2lvbj0xLjIwMTAuMC4xLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMzA0NTg1MTgzMWVkNWMEAQAAAJ4BU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydCwgQ2FzdGxlLkFjdGl2ZVdyaXRlci5Ec2wsIFZlcnNpb249MS4yMDEwLjAuMSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj02MDMwNDU4NTE4MzFlZDVjXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAABxDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydFtdAgAAAAgICQMAAAAAAAAAAAAAAAcDAAAAAAEAAAAAAAAABBpDYXN0bGUuQWN0aXZlV3JpdGVyLkltcG9ydAIAAAAL</additionalImports>
+  <classes>
+    <modelClass name="Activity" lazy="true" schema="dbo" table="ussSSActivity" batchSize="50">
+      <targets>
+        <manyToOneRelation Id="164ff960-103d-4d2c-98e8-4d2d32db7fef" targetCascade="AllDeleteOrphan" targetColumnKey="ArtisanID" targetLazy="true" targetTable="ussSSActivity" targetPropertyName="Activities" sourceCascade="SaveUpdate" sourceColumn="ArtisanID" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="1b741e8f-e322-43b5-acd7-3dc791dffc43" targetCascade="AllDeleteOrphan" targetColumnKey="JobID" targetLazy="true" targetTable="ussSSActivity" targetPropertyName="Activities" sourceCascade="SaveUpdate" sourceColumn="JobID">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Job" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="8677a297-319b-4824-853c-58fcbd493797" targetCascade="AllDeleteOrphan" targetColumnKey="MachineID" targetLazy="true" targetTable="ussSSActivity" targetPropertyName="Activities" sourceCascade="SaveUpdate" sourceColumn="MachineID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="191ea237-ad78-4aa4-bd4b-326e9922620d" targetCascade="AllDeleteOrphan" targetColumnKey="OperationID" targetLazy="true" targetTable="ussSSActivity" targetPropertyName="Activities" sourceCascade="SaveUpdate" sourceColumn="OperationID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Operation" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="0a7df3ab-bb96-4d29-a801-af20c398682f" targetCascade="AllDeleteOrphan" targetColumnKey="PartID" targetLazy="true" targetTable="ussSSActivity" targetPropertyName="Activities" sourceCascade="SaveUpdate" sourceColumn="PartID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Part" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="a3f57939-be63-414a-8ae0-4042b2cd2472" name="EstimatedStartDate" column="EstimatedStartDate" columnType="DateTime" length="0" />
+        <modelProperty Id="f3618fad-1a2b-4719-8b22-746312e076cf" name="EstimatedDuration" column="EstimatedDuration" columnType="Double" length="0" />
+        <modelProperty Id="82f16fe4-9107-4a2d-8ec2-79beb184c303" name="EstimatedElapsedDuration" column="EstimatedElapsedDuration" columnType="Double" length="0" />
+        <modelProperty Id="157392e2-c7dc-4572-922e-9ffb8b5d1b72" name="ActualStartDate" column="ActualStartDate" columnType="DateTime" length="0" />
+        <modelProperty Id="472c0e53-565b-4d5b-980e-cc102c2f28e2" name="ActualDuration" column="ActualDuration" columnType="Double" length="0" />
+        <modelProperty Id="55f6ae51-dacb-441f-9977-99b49820abae" name="ActualElapsedDuration" column="ActualElapsedDuration" columnType="Double" length="0" />
+        <modelProperty Id="5da65106-da80-4081-8672-04a153b3995e" name="Sequence" column="Sequence" columnType="Int32" length="0" />
+        <modelProperty Id="2309f8dd-35c4-442b-8987-63c1d3c6f4aa" name="EstimatedArtisanCost" column="EstimatedArtisanCost" columnType="Double" length="0" />
+        <modelProperty Id="4e23aa1a-302c-4c34-b42f-6df77a29b6f7" name="EstimatedMachineCost" column="EstimatedMachineCost" columnType="Double" length="0" />
+        <modelProperty Id="8f03e2b1-9972-4c5f-b605-55ec5f8218fc" name="EstimatedOperationCost" column="EstimatedOperationCost" columnType="Double" length="0" />
+        <modelProperty Id="ac02def1-ee17-46c7-804e-9b2e127d9f10" name="ActualArtisanCost" column="ActualArtisanCost" columnType="Double" length="0" />
+        <modelProperty Id="dcdb80b0-d5d4-441d-83a8-a72e567f3cbe" name="ActualMachineCost" column="ActualMachineCost" columnType="Double" length="0" />
+        <modelProperty Id="32c1bfe4-fa1d-42b2-a5b6-b197f919b305" name="ActualOperationCost" column="ActualOperationCost" columnType="Double" length="0" />
+        <modelProperty Id="12f73d49-ab27-441c-8588-75efe7f10fd2" name="IsActualsPosted" column="IsActualsPosted" columnType="Boolean" length="0" />
+        <modelProperty Id="dc5cc5dc-e418-48f3-a642-4d347e0302d1" name="Description" column="Description" length="0" />
+        <modelProperty Id="32171629-095c-47d2-970e-cb4b2361a373" name="IsNextActivity" column="IsNextActivity" columnType="Boolean" length="0" />
+        <modelProperty Id="0590557d-d2c4-4f8e-a78d-9c3e19270a1e" name="Comments" column="Comments" length="0" />
+        <modelProperty Id="05a764b5-49ad-4c6a-83f8-2c617fb4b6c9" name="IsMaterialAvailable" column="IsMaterialAvailable" columnType="Boolean" length="0" />
+        <modelProperty Id="103aaa16-ae97-4310-8de7-85bbb6f83c82" name="IsQIR" columnType="Boolean" length="0" />
+        <modelProperty Id="29e722e3-72e2-4991-a47a-19f335b792a0" name="CreatedUser" column="CreatedUser" length="50" />
+        <modelProperty Id="aefdc7f2-257e-4fcc-8597-f9e37819396a" name="Quantity" column="Quantity" columnType="Int32" length="0" />
+        <modelProperty Id="91c095cb-7f08-407b-b57b-41762ca1fc04" name="CurrentStateID" columnType="Int32" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Part" lazy="true" schema="dbo" table="ussSSPart">
+      <properties>
+        <modelProperty Id="a935cf2e-23ac-408e-a194-58e16d0d9844" name="Code" column="Code" length="0" />
+        <modelProperty Id="c7121405-ca97-4d12-b4cb-1b3320718433" name="Description" column="Description" length="0" />
+        <modelProperty Id="64d3c91e-d36e-4159-b0a1-357208b1cef6" name="DBColour" column="Colour" length="0" accessor="Protected" />
+        <modelProperty Id="391ac07a-04f6-4e30-a4ca-5cadc10a93c9" name="Image" column="Image" columnType="BinaryBlob" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ActivityLog" lazy="true" schema="dbo" table="ussSSActivityLog" batchSize="50">
+      <targets>
+        <manyToOneRelation Id="443911d2-190d-4bb1-9c09-3d1d9aa6ce34" targetCascade="AllDeleteOrphan" targetColumnKey="ActivityID" targetLazy="true" targetTable="ussSSActivityLog" targetPropertyName="ActivityLogs" sourceCascade="SaveUpdate" sourceColumn="ActivityID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Activity" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="f3804935-3222-48b2-8e33-25d28bfd4951" targetCascade="AllDeleteOrphan" targetColumnKey="ArtisanID" targetLazy="true" targetTable="ussSSActivityLog" targetPropertyName="ActivityLogs" sourceCascade="SaveUpdate" sourceColumn="ArtisanID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="efe7c7f4-42a5-49d1-b765-41a84c5dce64" targetCascade="AllDeleteOrphan" targetColumnKey="MachineID" targetLazy="true" targetTable="ussSSActivityLog" targetPropertyName="ActivityLogs" sourceCascade="SaveUpdate" sourceColumn="MachineID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="9156b351-22e7-4d03-ab53-b504a6288838" targetCascade="AllDeleteOrphan" targetColumnKey="ReasonCodeID" targetLazy="true" targetTable="ussSSActivityLog" sourceCascade="SaveUpdate" sourceColumn="ReasonCodeID" sourcePropertyName="ReasonCodeActivityLogs" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore" targetPropertyGenerated="false">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/ReasonCode" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="2cbdd76d-6d73-4115-acf6-59d7dda4ebac" name="StartDate" column="StartDate" columnType="DateTime" length="0" />
+        <modelProperty Id="d53028e6-ac3b-4f19-a4e6-534bb919b460" name="Duration" column="Duration" columnType="Double" length="0" />
+        <modelProperty Id="c75f45ed-9846-4e79-9ae4-2b1d397be92a" name="CurrentStateID" column="CurrentState" columnType="Int32" customColumnType="Int32" customMemberType="ControlScan" length="0" />
+        <modelProperty Id="2ec49397-c058-486d-bbe3-962136c50c78" name="ArtisanCost" column="ArtisanCost" columnType="Double" length="0" />
+        <modelProperty Id="6448ce93-4b76-45dc-879b-ef69dad4f73b" name="MachineCost" column="MachineCost" columnType="Double" length="0" />
+        <modelProperty Id="856127eb-58a4-4735-9fab-0020167e0508" name="OperationCost" column="OperationCost" columnType="Double" length="0" />
+        <modelProperty Id="7ef5f9a1-1d2b-4c9e-afac-ea44b4a8844a" name="LogTime" column="LogTime" columnType="DateTime" length="0" />
+        <modelProperty Id="a937252d-f17a-468b-9200-1219bc7aec2d" name="AgentID" column="AgentID" columnType="Int32" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Artisan" lazy="true" schema="dbo" table="ussSSArtisan">
+      <targets>
+        <manyToOneRelation Id="05dc9f48-09e3-4e5a-92e9-b8d4ab75a264" targetCascade="AllDeleteOrphan" targetColumnKey="CostCentreID" targetLazy="true" targetTable="ussSSArtisan" targetPropertyName="Artisans" sourceCascade="SaveUpdate" sourceColumn="CostCentreID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/CostCentre" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="20ea30c4-c360-4f3f-9a3b-56138e7e29eb" targetCascade="AllDeleteOrphan" targetColumnKey="DefaultMachineID" targetLazy="true" targetTable="ussSSArtisan" targetPropertyName="Artisans" sourceCascade="SaveUpdate" sourceColumn="DefaultMachineID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="f22fd3e8-f794-4e63-a129-676ba2a9743f" name="Code" column="Code" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;&quot;Code is a required field.&quot;&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="245112c2-9fe2-47e9-81d6-1f944b7cf325" name="Description" column="Description" length="0" />
+        <modelProperty Id="dad88d1f-4396-4d19-8d10-0261e1bc5a33" name="DBColour" column="Colour" length="0" accessor="Protected" />
+        <modelProperty Id="9f3c0360-f8a5-4018-8da9-300816a8f69f" name="Image" column="Image" columnType="BinaryBlob" length="0" />
+        <modelProperty Id="9d938d1e-6a9a-4a88-96fc-746f71aa54cd" name="Rate" column="Rate" columnType="Double" length="0" />
+        <modelProperty Id="e9039f23-1f8c-4ac4-af63-8f0423cf3c83" name="CalendarID" column="CalendarID" columnType="Int32" length="0" />
+        <modelProperty Id="6a59dd8a-790a-4ce2-b8d7-306126c9f418" name="ServiceCode" column="ServiceCode" length="0" />
+        <modelProperty Id="a361ce8c-42e6-4b11-9dcd-fd9689c50e4e" name="IsPrimary" column="IsPrimary" columnType="Boolean" length="0" />
+        <modelProperty Id="5af1bb07-1ffc-4adc-a6a8-ce3aa560199b" name="Password" column="Password" length="0" validator="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ArrayOfAnyType xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;anyType xsi:type=&quot;ValidateNonEmpty&quot;&gt;&#xD;&#xA;    &lt;ErrorMessage&gt;&quot;Password is a required field.&quot;&lt;/ErrorMessage&gt;&#xD;&#xA;    &lt;RunWhen&gt;Everytime&lt;/RunWhen&gt;&#xD;&#xA;    &lt;ExecutionOrder&gt;0&lt;/ExecutionOrder&gt;&#xD;&#xA;  &lt;/anyType&gt;&#xD;&#xA;&lt;/ArrayOfAnyType&gt;" />
+        <modelProperty Id="cbc11fb5-480b-4f1a-aa78-5d8e1654a8fb" name="IsArtisanForeman" column="IsArtisanForeman" columnType="Boolean" length="0" />
+        <modelProperty Id="1a44793f-291e-4988-a52e-9a1f1a368ae3" name="ForemanArtisanID" column="ForemanArtisanID" columnType="Int32" length="0" />
+        <modelProperty Id="ee1f8b90-d473-4c1b-be83-510a364b475e" name="Inactive" columnType="Boolean" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Configuration" schema="dbo" table="ussSSConfiguration">
+      <properties>
+        <modelProperty Id="d8281d6c-1dc5-4804-a94c-4285ce07c3b3" name="RateMethod" column="RateMethod" columnType="Custom" customColumnType="Int32" customMemberType="RateMethod" length="0" />
+        <modelProperty Id="b67b6420-9b05-4bde-9a16-385f1387c8e3" name="CostCentreMethod" column="CostCentreMethod" columnType="Custom" customColumnType="Int32" customMemberType="CostCentreMethod" length="0" />
+        <modelProperty Id="d22300cd-9f8f-48f7-8924-5d33866b9cb9" name="LogOffInterval" column="LogOffInterval" columnType="Int32" length="0" />
+        <modelProperty Id="eefa117c-7aec-4c15-a6bf-4014db94dd40" name="LogOffIntervalTypeID" column="LogOffIntervalType" columnType="Int32" length="0" />
+        <modelProperty Id="499414f5-db86-4ae9-8980-337bf3f35794" name="TimerInterval" column="TimerInterval" columnType="Int32" length="0" />
+        <modelProperty Id="969916c4-7c16-4b3c-badf-6582648052cc" name="DrawingPath" column="DrawingPath" length="0" />
+        <modelProperty Id="a395e88f-cf4f-434c-a285-c591de22ab08" name="DrawingExtension" column="DrawingExtension" length="0" />
+        <modelProperty Id="713809bf-81a3-4bb6-85fb-ac4a99f1ffda" name="VersionNumber" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="CostCentre" lazy="true" schema="dbo" table="ussSSCostCentre">
+      <properties>
+        <modelProperty Id="9f1ea813-0569-4d71-a337-7185f5e3b858" name="Code" column="Code" length="0" />
+        <modelProperty Id="0cf560d4-d573-4d4b-9a03-fe3bc46264b7" name="Description" column="Description" length="0" />
+        <modelProperty Id="21996623-4bdf-46f8-bb73-65599af99f50" name="TransactionCode" column="TransactionCode" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Customer" lazy="true" schema="dbo" table="ussSSCustomer">
+      <properties>
+        <modelProperty Id="946b3978-7c59-4167-8c8b-78cc5dcb4eb8" name="Code" column="Code" length="0" />
+        <modelProperty Id="8dac4ae5-594b-40a4-a4c2-3e822ff47377" name="Description" column="Description" length="0" />
+        <modelProperty Id="0783adc7-6ee2-4333-95c2-50ba63ed4b52" name="DBColour" column="Colour" length="0" accessor="Protected" />
+        <modelProperty Id="1c9fedfc-9c05-4647-a7a4-b3903e7844d6" name="Image" column="Image" columnType="BinaryBlob" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Job" schema="dbo" table="ussSSJob" batchSize="50">
+      <targets>
+        <manyToOneRelation Id="9e50ee53-ad30-4800-9cd5-052a8bc3c137" targetCascade="AllDeleteOrphan" targetColumnKey="CustomerID" targetLazy="true" targetTable="ussSSJob" targetPropertyName="Jobs" sourceCascade="SaveUpdate" sourceColumn="CustomerID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Customer" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="e4ef0b8e-72b4-4dc2-9f6d-3712e330aab8" targetCascade="AllDeleteOrphan" targetColumnKey="PrimaryArtisanID" targetLazy="true" targetTable="ussSSJob" sourceCascade="SaveUpdate" sourceColumn="PrimaryArtisanID" sourcePropertyName="PrimaryArtisan" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore" targetPropertyGenerated="false" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="a4dcf8a1-5483-45be-9466-16d5a8cfd1db" targetCascade="AllDeleteOrphan" targetColumnKey="DrawingID" targetLazy="true" targetPropertyName="JobDrawings" sourceCascade="SaveUpdate" sourceColumn="DrawingID" targetPropertyGenerated="false">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Drawing" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="aef03a37-0979-4b36-85fc-275e9bb17edc" name="Number" column="Number" length="0" />
+        <modelProperty Id="10bae68b-3d00-4207-bfee-1b84f6110644" name="Description" column="Description" length="0" />
+        <modelProperty Id="b277c06a-e28d-4ac9-94f0-06e9dac7abe4" name="JobDate" column="JobDate" columnType="DateTime" length="0" />
+        <modelProperty Id="7e82e0b1-0cdc-4f2c-a45d-4e5d396c8431" name="RequiredDeliveryDate" column="RequiredDeliveryDate" columnType="DateTime" length="0" />
+        <modelProperty Id="c3a25558-9462-4e29-917e-9cf0590d7a5c" name="EstimatedDeliveryDate" column="EstimatedDeliveryDate" columnType="DateTime" length="0" />
+        <modelProperty Id="2c4c2c6e-6508-4605-ac14-3a6346e8a553" name="OrderPrice" description="Quoted Price" column="OrderPrice" columnType="Double" length="0" />
+        <modelProperty Id="beb74e63-9fa5-450d-837b-97fe872cc58d" name="TotalCost" column="TotalCost" columnType="Double" length="0" />
+        <modelProperty Id="69b2d642-dd7d-4f7a-b4e5-2245e3466ffb" name="EstimatedStartDate" column="EstimatedStartDate" columnType="DateTime" length="0" />
+        <modelProperty Id="bd1971da-31d1-4feb-941f-e09bade43a54" name="EstimatedEndDate" column="EstimatedEndDate" columnType="DateTime" length="0" />
+        <modelProperty Id="afe546ba-17cc-4907-8495-5f740fc339d8" name="ActualStartDate" column="ActualStartDate" columnType="DateTime" length="0" />
+        <modelProperty Id="60f3f729-6544-4402-a4cf-12d29534fb32" name="ActualEndDate" column="ActualEndDate" columnType="DateTime" length="0" />
+        <modelProperty Id="373d7343-15d0-4943-9506-65a690417e41" name="JobCardID" column="JobCardID" columnType="Int32" length="0" />
+        <modelProperty Id="756a5889-f39a-401b-af3b-7584b00b1103" name="IsMaterialAvailable" column="IsMaterialAvailable" columnType="Boolean" length="0" />
+        <modelProperty Id="41ec8441-d65c-4d11-8d14-573b362508b1" name="JobStateID" column="JobStateID" columnType="Int32" length="0" columnDefault="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Machine" lazy="true" schema="dbo" table="ussSSMachine">
+      <targets>
+        <manyToOneRelation Id="b8993d2f-b63e-4aad-9812-1814caf3bf73" targetCascade="AllDeleteOrphan" targetColumnKey="CostCentreID" targetLazy="true" targetTable="ussSSMachine" targetPropertyName="Machines" sourceCascade="SaveUpdate" sourceColumn="CostCentreID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/CostCentre" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="2b2f336b-0105-48e9-b48f-d138640d5577" name="Code" column="Code" length="0" />
+        <modelProperty Id="49a7e67a-0889-4702-adff-508c47b7c7cc" name="Description" column="Description" length="0" />
+        <modelProperty Id="d4910803-1ffb-4639-b2d3-3c1ea1dba7c5" name="DBColour" column="Colour" length="0" accessor="Protected" />
+        <modelProperty Id="2136b8fd-29ec-4b11-816c-7f6ba69c598d" name="Image" column="Image" columnType="BinaryBlob" length="0" />
+        <modelProperty Id="f88c2e39-2844-4160-9bb7-4ba7e3a4cad0" name="Rate" column="Rate" columnType="Double" length="0" />
+        <modelProperty Id="70befcf8-ea44-44f7-818e-1a165707d60d" name="CalendarID" column="CalendarID" columnType="Int32" length="0" />
+        <modelProperty Id="71870b6a-d9d1-446c-8aec-676d93a394c7" name="ServiceCode" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="Operation" lazy="true" schema="dbo" table="ussSSOperation">
+      <targets>
+        <manyToOneRelation Id="1b84902b-04d7-4e0a-a76f-0b39c593bb88" targetCascade="AllDeleteOrphan" targetColumnKey="CostCentreID" targetLazy="true" targetTable="ussSSOperation" targetPropertyName="Operations" sourceCascade="SaveUpdate" sourceColumn="CostCentreID" targetAccessor="Protected">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/CostCentre" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="e2ffaa06-a1a1-45c7-bdb1-798722c72f3e" name="Code" column="Code" length="0" />
+        <modelProperty Id="4bc410a6-70a5-4f19-8e63-882a7d99dfff" name="Description" column="Description" length="0" />
+        <modelProperty Id="f883ce5b-5712-456c-aaec-823ee6e862ca" name="Rate" column="Rate" columnType="Double" length="0" />
+        <modelProperty Id="d7af4328-ec06-4c08-9f9b-1a1ef181d130" name="IsBuyOut" column="IsBuyOut" columnType="Boolean" length="0" />
+        <modelProperty Id="4e6ed2d7-2c4c-463c-96fe-80f18b5fc218" name="ServiceCode" column="ServiceCode" length="0" />
+        <modelProperty Id="df23ece9-e370-4c7a-9dde-069bac3a6965" name="IsPrimary" column="IsPrimary" columnType="Boolean" length="0" />
+        <modelProperty Id="f2b631f2-e15d-4998-bdb3-729d1e42beae" name="AllowArtisanToAssign" column="AllowArtisanToAssign" columnType="Boolean" length="0" />
+      </properties>
+      <manyToManyTargets>
+        <manyToManyRelation Id="a505bbe8-fce8-4fca-8e88-d1c4ad833bff" sourceColumn="OperationID" sourceLazy="true" table="ussSSOperationArtisans" targetColumn="ArtisanID" targetLazy="true" sourcePropertyName="Artisans" targetPropertyName="Operations" collectionIDColumn="ID" collectionIDColumnType="Int32" collectionIDGenerator="None">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToManyRelation>
+      </manyToManyTargets>
+    </modelClass>
+    <modelClass name="LogonLog" lazy="true" schema="dbo" table="ussSSLogonLog">
+      <targets>
+        <manyToOneRelation Id="6585e45f-dd3c-49ae-b258-381309292b17" targetCascade="AllDeleteOrphan" targetColumnKey="ArtisanID" targetLazy="true" targetTable="ussSSLogonLog" sourceCascade="SaveUpdate" sourceColumn="ArtisanID" sourcePropertyName="ArtisanLogonLogs" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="bd19a965-5a2c-4a2e-b471-d2089c58e760" targetCascade="AllDeleteOrphan" targetColumnKey="MachineID" targetLazy="true" targetTable="ussSSLogonLog" sourceCascade="SaveUpdate" sourceColumn="MachineID" sourcePropertyName="MachineLogonLogs">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="542931e3-4e51-4648-b77f-34294c63adee" targetCascade="AllDeleteOrphan" targetColumnKey="ReasonCodeID" targetLazy="true" targetTable="ussSSLogonLog" sourceCascade="SaveUpdate" sourceColumn="ReasonCodeID" sourcePropertyName="ReasonCodeLogonLogs" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore" targetPropertyGenerated="false">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/ReasonCode" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="0b42bffa-0717-4ceb-9205-26666d5dcffc" name="Timestamp" column="Timestamp" columnType="Timestamp" length="0" />
+        <modelProperty Id="2a96a0b7-ebbe-489a-97c6-4d07d5ee986d" name="LogonTypeID" column="LogonTypeID" columnType="Int32" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="ReasonCode" lazy="true" schema="dbo" table="ussSSReasonCode">
+      <properties>
+        <modelProperty Id="b9f578b4-21c1-45e8-a004-5cf2a8d1ff12" name="Code" column="Code" length="0" />
+        <modelProperty Id="68d3040c-81ff-437f-adbe-cd4264a2fb23" name="Description" column="Description" length="0" />
+        <modelProperty Id="3fbf861a-025c-4698-81f7-844a491a7c8b" name="IsTriggerMessage" column="IsTriggerMessage" columnType="Boolean" length="0" />
+        <modelProperty Id="adcb7330-4a49-4916-864d-ffd4670c4a0e" name="IsQIR" column="IsQualityImprovementReport" columnType="Boolean" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="OperationArtisan" lazy="true" table="ussSSOperationArtisans">
+      <targets>
+        <manyToOneRelation Id="2842ee4f-d626-453b-9e53-08e1cb2ad6fd" targetLazy="true" sourceColumn="ArtisanID" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="ade55460-6155-4baa-bd09-e9c181e2b804" targetLazy="true" sourceColumn="OperationID">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Operation" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="OperationMachine" lazy="true" table="ussSSOperationMachines">
+      <targets>
+        <manyToOneRelation Id="f50d859f-e266-470f-b677-c527f536fc43" targetCascade="AllDeleteOrphan" targetColumnKey="OperationID" targetTable="ussSSOperationMachines" sourceCascade="SaveUpdate" sourceColumn="OperationID" sourcePropertyName="OperationMachineDefault">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Operation" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="389da142-daff-4c7e-bb4c-4cfeb809595d" targetCascade="AllDeleteOrphan" targetColumnKey="MachineID" targetLazy="true" targetTable="ussSSOperationMachines" sourceCascade="SaveUpdate" sourceColumn="MachineID" sourcePropertyName="MachineOperationDefault">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="MachineArtisan" lazy="true" table="ussSSMachineArtisans">
+      <targets>
+        <manyToOneRelation Id="f2740ac7-d672-4f45-99ff-fec5cf69e20c" targetColumnKey="MachineID" targetLazy="true" targetTable="ussSSMachineArtisans" sourceCascade="SaveUpdate" sourceColumn="MachineID" sourcePropertyName="MachineArtisanDefault">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Machine" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="eb7a54ee-8d4c-44cc-9eff-9a723847dd45" targetCascade="AllDeleteOrphan" targetColumnKey="ArtisanID" targetLazy="true" targetTable="ussSSMachineArtisans" sourceCascade="SaveUpdate" sourceColumn="ArtisanID" sourcePropertyName="ArtisanMachineDefault">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Artisan" />
+        </manyToOneRelation>
+      </targets>
+    </modelClass>
+    <modelClass name="Drawing" lazy="true" schema="dbo" table="ussSSDrawing">
+      <properties>
+        <modelProperty Id="289a80e8-4aec-47a3-9937-1daa5989b242" name="Code" column="Code" length="0" />
+        <modelProperty Id="a48a8de1-1672-4573-99c7-fbe8276cf1be" name="Drawing" column="Drawing" columnType="BinaryBlob" length="0" />
+        <modelProperty Id="d854de12-3b07-4f7e-9473-6f003d30ea4f" name="DrawingPath" column="DrawingPDFPath" length="0" />
+      </properties>
+    </modelClass>
+    <modelClass name="QIR" lazy="true" schema="dbo" table="ussSSActivityQIR">
+      <targets>
+        <manyToOneRelation Id="5969e604-6562-4c64-a6b5-129d8dc28283" targetCascade="AllDeleteOrphan" targetColumnKey="ActivityID" targetLazy="true" targetTable="ussSSQIR" targetPropertyName="QIRs" sourceCascade="SaveUpdate" sourceColumn="ActivityID">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/Activity" />
+        </manyToOneRelation>
+        <manyToOneRelation Id="1471c232-58d0-403f-949d-fad03d3b02d7" targetCascade="AllDeleteOrphan" targetColumnKey="ReasonCodeID" targetLazy="true" targetTable="ussSSQIR" targetPropertyName="QIRreasons" sourceCascade="SaveUpdate" sourceColumn="ReasonCodeID" sourceNotFoundBehaviour="Ignore" targetNotFoundBehaviour="Ignore">
+          <modelClassMoniker name="/1f1288b3-d205-413c-9c6d-77fd95495ae5/ReasonCode" />
+        </manyToOneRelation>
+      </targets>
+      <properties>
+        <modelProperty Id="fb27ee3e-dcff-4dcb-8c0d-1dee4f8ad0e7" name="LogDateTime" column="LogDateTime" columnType="Timestamp" length="0" />
+        <modelProperty Id="e7e3448b-786b-4d98-a82c-fbd728471dab" name="LogAgentID" column="LogAgentID" columnType="Int32" length="0" />
+        <modelProperty Id="ef12c553-226c-41e5-af78-449ef583f6f5" name="LogAgentName" column="LogAgentName" length="0" />
+      </properties>
+    </modelClass>
+  </classes>
+</model>
